@@ -19,14 +19,13 @@ output_file = open(output_filename, 'a', newline='')
 
 # Configure the first serial port, this should be the master GPS
 # U-Blox connected directly should be ttyACM0 on a RPi
+# U-Blox connect via USB dongle will be ttyUSB0
 Serial_Port1 = serial.Serial(
     port='COM4',
     baudrate=115200,
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
     bytesize=serial.EIGHTBITS,
-    rtscts=True,
-    dsrdtr=True,
     timeout=1
 )
 Serial_Port1.flushInput()
