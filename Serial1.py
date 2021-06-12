@@ -1,5 +1,5 @@
 """"
-Single serial port logger, forked from the Comm module of SD-Node
+Single serial port logger, forked from the Comm module of SD-Node, code base from PMU/PDC c. 2013
 Takes a serial input and logs NMEA data, drops all binary data.
 Tested with Python >=3.9
 By: JOR
