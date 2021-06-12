@@ -21,7 +21,7 @@ output_file = open(output_filename, 'a', newline='')
 # U-Blox connected directly should be ttyACM0 on a RPi
 Serial_Port1 = serial.Serial(
     port='COM4',
-    baudrate=9600,
+    baudrate=115200,
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
     bytesize=serial.EIGHTBITS,
