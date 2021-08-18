@@ -10,4 +10,4 @@ All current code is in Python 3.9 and has been cut down to base minimums.
 Linux scripts are *.sh and are tested on RPi and ubuntu only.
 
 1. [Autostart a process on the RPi](https://github.com/IOTECH-Donegal/SerialLogging/blob/main/docs/AutostartingRPi.md)
-
+2. [Timing on a RPi](https://github.com/IOTECH-Donegal/SerialLogging/blob/main/docs/TimesyncRPi.md)
