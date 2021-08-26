@@ -11,7 +11,6 @@ By: JOR
 from datetime import datetime
 import serial
 
-
 import ubx.ClassID as ubc
 import ubx.MessageID as ubm
 
@@ -30,7 +29,7 @@ def logfilename():
 # Configure the serial port, this should be ttyS0
 Serial_Port1 = serial.Serial(
     # For Windows
-    port='COM13',
+    port='COM10',
     # For RPi
     #port='/dev/ttyS0',
     baudrate=115200,
