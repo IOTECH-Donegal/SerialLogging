@@ -1,5 +1,5 @@
 """"
-Main routine for Serial Mux
+Main routine for Serial Mux, NMEA only
 Forked from the Comm module of SD-Node, written c. 2017
 Takes a serial input and logs, optionally, forward to a UDP address:port
 Tested with Python >=3.6
@@ -17,16 +17,15 @@ import sys
 import socket
 import serial
 
-print('***** SerialMux1 *****')
+print('***** NMEAMux1 *****')
 print('Accepts NMEA data from a serial port and:')
 print('1. Saves with a date/time named logfile')
 print('2. Outputs to a mixed IP address and port for other applications to use.')
-print('All other binary protocols and AIS are ignored.')
 
 # Create the log file and open it
 def logfilename():
     now = datetime.now()
-    return 'SerialLogger-%0.4d%0.2d%0.2d-%0.2d%0.2d%0.2d.nmea' % \
+    return 'NMEALogger-%0.4d%0.2d%0.2d-%0.2d%0.2d%0.2d.nmea' % \
                 (now.year, now.month, now.day,
                  now.hour, now.minute, now.second)
 
@@ -53,7 +52,7 @@ Serial_Port1 = serial.Serial(
     port='COM13',
     # For RPi
     #port='/dev/ttyS0',
-    baudrate=115200,
+    baudrate=38400,
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
     bytesize=serial.EIGHTBITS,
