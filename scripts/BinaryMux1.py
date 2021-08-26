@@ -7,7 +7,7 @@ Tested with Python >=3.6
 By: JOR
     v0.1    26AUG21     Modified NMEAMux to log UBX
 """
-import tkinter
+
 from datetime import datetime
 import serial
 

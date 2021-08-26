@@ -21,6 +21,7 @@ print('***** NMEAMux1 *****')
 print('Accepts NMEA data from a serial port and:')
 print('1. Saves with a date/time named logfile')
 print('2. Outputs to a mixed IP address and port for other applications to use.')
+print('All other binary protocols and AIS are ignored.')
 
 # Create the log file and open it
 def logfilename():

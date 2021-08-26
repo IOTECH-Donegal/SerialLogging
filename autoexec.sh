@@ -6,4 +6,4 @@
 # Script: autoexec.sh
 
 HOMEPATH="/home/pi"
-python3 $HOMEPATH/scripts/SerialMux1.py
+python3 $HOMEPATH/scripts/NMEAMux1.py
