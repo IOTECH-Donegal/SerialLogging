@@ -77,7 +77,7 @@ try:
                     output_file.writelines(current_line)
                     print(current_line.strip())
                 else:
-                    print('Non NMEA line detected')
+                    print('Non NMEA line detected', current_line.strip())
             except Exception as error:
                 print("Main loop error: ", sys.exc_info()[0])
             finally:
